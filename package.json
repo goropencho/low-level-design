@@ -1,0 +1,23 @@
+{
+  "name": "low-level-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/goropencho/low-level-design.git",
+  "author": "Gaurav Panchal <gkp.125@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3",
+    "gts": "^5.3.1",
+    "@types/node": "20.12.7"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint"
+  }
+}
